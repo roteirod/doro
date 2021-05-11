@@ -43,10 +43,6 @@ class DataManager {
         NotificationsManager.shared.addNotifications()
     }
     
-    func test() {
-        print("TEST")
-    }
-    
     func currentSessionState(completion: @escaping(_ index: Int, _ state: SessionState, _ timeLeft: Double, _ currentProgress: Double, _ totalSpent: Double, _ totalProgress: Double) -> Void) {
         let currentTime: Double = Date().timeIntervalSince1970
         var totalSpent: Double = 0

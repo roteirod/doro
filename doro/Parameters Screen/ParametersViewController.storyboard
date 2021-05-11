@@ -224,7 +224,7 @@
                                             <constraint firstAttribute="height" constant="40" id="Blh-fS-FS2"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="QuattrocentoSans-Bold" family="Quattrocento Sans" pointSize="18"/>
-                                        <state key="normal" title="Choose from saved">
+                                        <state key="normal" title="Saved Configs">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
@@ -237,7 +237,7 @@
                                             <constraint firstAttribute="height" constant="40" id="1xb-Uq-DP5"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="QuattrocentoSans-Bold" family="Quattrocento Sans" pointSize="18"/>
-                                        <state key="normal" title="Run test session">
+                                        <state key="normal" title="Run Test">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
