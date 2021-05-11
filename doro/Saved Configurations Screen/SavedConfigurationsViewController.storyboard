@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="rJ7-uC-zsx">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="QuattrocentoSans-Bold.ttf">
+            <string>QuattrocentoSans-Bold</string>
+        </array>
+        <array key="QuattrocentoSans.ttf">
+            <string>QuattrocentoSans</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Saved Configurations View Controller-->
+        <scene sceneID="LBX-SQ-hpU">
+            <objects>
+                <viewController id="rJ7-uC-zsx" customClass="SavedConfigurationsViewController" customModule="doro" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Xi0-9U-cmB">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="SJ6-oR-V1j">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" id="0J0-2o-qtu" customClass="SavedConfigurationCell" customModule="doro" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="24.5" width="414" height="116"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="0J0-2o-qtu" id="CUp-3I-8iX">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="116"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Configuration" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gDL-dq-g5f">
+                                                    <rect key="frame" x="20" y="10" width="116.5" height="25"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="25" id="fud-Q8-hSd"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="QuattrocentoSans-Bold" family="Quattrocento Sans" pointSize="20"/>
+                                                    <color key="textColor" red="0.23921568630000001" green="0.23921568630000001" blue="0.23921568630000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Focus:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7HV-JN-XsT">
+                                                    <rect key="frame" x="20" y="40" width="41" height="17"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="17" id="WyW-WD-fTp"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="QuattrocentoSans-Bold" family="Quattrocento Sans" pointSize="15"/>
+                                                    <color key="textColor" red="0.23921568630000001" green="0.23921568630000001" blue="0.23921568630000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="25min" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xQJ-5x-AtY">
+                                                    <rect key="frame" x="66" y="40" width="35" height="17"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="17" id="4o6-Sj-s1D"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="QuattrocentoSans" family="Quattrocento Sans" pointSize="13"/>
+                                                    <color key="textColor" red="0.23921568630000001" green="0.23921568630000001" blue="0.23921568630000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="15min" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rT8-ix-gWU">
+                                                    <rect key="frame" x="101" y="74" width="32.5" height="17"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="17" id="q7U-0k-0WQ"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="QuattrocentoSans" family="Quattrocento Sans" pointSize="13"/>
+                                                    <color key="textColor" red="0.23921568630000001" green="0.23921568630000001" blue="0.23921568630000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Short break:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ood-6h-jwS">
+                                                    <rect key="frame" x="20" y="57" width="79.5" height="17"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="17" id="Stj-Eg-Myc"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="QuattrocentoSans-Bold" family="Quattrocento Sans" pointSize="15"/>
+                                                    <color key="textColor" red="0.23921568630000001" green="0.23921568630000001" blue="0.23921568630000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Long break:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gr9-GA-31D">
+                                                    <rect key="frame" x="20" y="74" width="76" height="17"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="17" id="wud-n9-cZc"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="QuattrocentoSans-Bold" family="Quattrocento Sans" pointSize="15"/>
+                                                    <color key="textColor" red="0.23921568630000001" green="0.23921568630000001" blue="0.23921568630000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icoPomo" translatesAutoresizingMaskIntoConstraints="NO" id="kHX-zU-0SK">
+                                                    <rect key="frame" x="349" y="10" width="50" height="50"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="50" id="JAC-ab-M5n"/>
+                                                        <constraint firstAttribute="height" constant="50" id="NcL-XH-Gyu"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pcH-Hc-Afe">
+                                                    <rect key="frame" x="368.5" y="27.5" width="11" height="23"/>
+                                                    <fontDescription key="fontDescription" name="QuattrocentoSans-Bold" family="Quattrocento Sans" pointSize="20"/>
+                                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <view alpha="0.90000000000000002" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bey-Jj-Xen">
+                                                    <rect key="frame" x="20" y="96" width="100" height="15"/>
+                                                    <color key="backgroundColor" red="0.78823529410000004" green="0.31372549020000001" blue="0.39607843139999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="15" id="EXQ-dq-BkT"/>
+                                                        <constraint firstAttribute="width" constant="100" id="GFm-ep-tv1"/>
+                                                    </constraints>
+                                                </view>
+                                                <view alpha="0.90000000000000002" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NF1-GS-NKa">
+                                                    <rect key="frame" x="120" y="96" width="30" height="15"/>
+                                                    <color key="backgroundColor" red="0.16862745100000001" green="0.61960784310000006" blue="0.49019607840000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="15" id="RdZ-yW-UIy"/>
+                                                        <constraint firstAttribute="width" constant="30" id="W4D-hc-6uL"/>
+                                                    </constraints>
+                                                </view>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pOA-Sc-yk4">
+                                                    <rect key="frame" x="150" y="96" width="50" height="15"/>
+                                                    <color key="backgroundColor" red="0.50588235290000005" green="0.68627450980000004" blue="0.92549019610000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="15" id="Ajk-P7-5Vm"/>
+                                                        <constraint firstAttribute="width" constant="50" id="qJ6-ju-WAi"/>
+                                                    </constraints>
+                                                </view>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5min" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fNC-oA-Ffi">
+                                                    <rect key="frame" x="104.5" y="57" width="28.5" height="17"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="17" id="jDZ-Gl-FMa"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="QuattrocentoSans" family="Quattrocento Sans" pointSize="13"/>
+                                                    <color key="textColor" red="0.23921568630000001" green="0.23921568630000001" blue="0.23921568630000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="pOA-Sc-yk4" firstAttribute="leading" secondItem="NF1-GS-NKa" secondAttribute="trailing" id="5g1-GP-unt"/>
+                                                <constraint firstItem="ood-6h-jwS" firstAttribute="top" secondItem="7HV-JN-XsT" secondAttribute="bottom" id="6Sn-Qb-x4G"/>
+                                                <constraint firstItem="pOA-Sc-yk4" firstAttribute="centerY" secondItem="bey-Jj-Xen" secondAttribute="centerY" id="7r5-lg-s2A"/>
+                                                <constraint firstItem="gDL-dq-g5f" firstAttribute="leading" secondItem="CUp-3I-8iX" secondAttribute="leading" constant="20" id="9ee-a3-Hr8"/>
+                                                <constraint firstItem="xQJ-5x-AtY" firstAttribute="centerY" secondItem="7HV-JN-XsT" secondAttribute="centerY" id="Ant-sK-aFM"/>
+                                                <constraint firstItem="gr9-GA-31D" firstAttribute="leading" secondItem="CUp-3I-8iX" secondAttribute="leading" constant="20" id="G20-Hv-iE2"/>
+                                                <constraint firstItem="kHX-zU-0SK" firstAttribute="top" secondItem="CUp-3I-8iX" secondAttribute="top" constant="10" id="Ksm-nh-R0g"/>
+                                                <constraint firstItem="7HV-JN-XsT" firstAttribute="top" secondItem="gDL-dq-g5f" secondAttribute="bottom" constant="5" id="R7M-wj-cK1"/>
+                                                <constraint firstItem="rT8-ix-gWU" firstAttribute="leading" secondItem="gr9-GA-31D" secondAttribute="trailing" constant="5" id="T83-jx-gD6"/>
+                                                <constraint firstItem="gr9-GA-31D" firstAttribute="top" secondItem="ood-6h-jwS" secondAttribute="bottom" id="Tmo-Wm-86A"/>
+                                                <constraint firstItem="bey-Jj-Xen" firstAttribute="top" secondItem="rT8-ix-gWU" secondAttribute="bottom" constant="5" id="Wgp-Hn-JZA"/>
+                                                <constraint firstAttribute="bottom" secondItem="bey-Jj-Xen" secondAttribute="bottom" constant="5" id="aD0-iW-MfQ"/>
+                                                <constraint firstItem="xQJ-5x-AtY" firstAttribute="leading" secondItem="7HV-JN-XsT" secondAttribute="trailing" constant="5" id="c2i-m8-v4U"/>
+                                                <constraint firstItem="NF1-GS-NKa" firstAttribute="centerY" secondItem="bey-Jj-Xen" secondAttribute="centerY" id="gJd-sn-3KD"/>
+                                                <constraint firstAttribute="trailing" secondItem="kHX-zU-0SK" secondAttribute="trailing" constant="15" id="gQv-E0-fzy"/>
+                                                <constraint firstItem="pcH-Hc-Afe" firstAttribute="centerY" secondItem="kHX-zU-0SK" secondAttribute="centerY" constant="4" id="hma-cV-nCL"/>
+                                                <constraint firstItem="7HV-JN-XsT" firstAttribute="leading" secondItem="CUp-3I-8iX" secondAttribute="leading" constant="20" id="huk-5U-10Y"/>
+                                                <constraint firstItem="rT8-ix-gWU" firstAttribute="centerY" secondItem="gr9-GA-31D" secondAttribute="centerY" id="mdB-N1-aB7"/>
+                                                <constraint firstItem="gDL-dq-g5f" firstAttribute="top" secondItem="CUp-3I-8iX" secondAttribute="top" constant="10" id="pFO-Mv-v7Z"/>
+                                                <constraint firstItem="pcH-Hc-Afe" firstAttribute="centerX" secondItem="kHX-zU-0SK" secondAttribute="centerX" id="rkm-KO-vso"/>
+                                                <constraint firstItem="ood-6h-jwS" firstAttribute="leading" secondItem="CUp-3I-8iX" secondAttribute="leading" constant="20" id="t0E-TG-s3Z"/>
+                                                <constraint firstItem="bey-Jj-Xen" firstAttribute="leading" secondItem="CUp-3I-8iX" secondAttribute="leading" constant="20" id="uWU-GU-qlm"/>
+                                                <constraint firstItem="fNC-oA-Ffi" firstAttribute="centerY" secondItem="ood-6h-jwS" secondAttribute="centerY" id="yuR-wt-2yd"/>
+                                                <constraint firstItem="fNC-oA-Ffi" firstAttribute="leading" secondItem="ood-6h-jwS" secondAttribute="trailing" constant="5" id="z1E-iM-1EB"/>
+                                                <constraint firstItem="NF1-GS-NKa" firstAttribute="leading" secondItem="bey-Jj-Xen" secondAttribute="trailing" id="z9M-j3-9cx"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="constraintViewFocusWidth" destination="GFm-ep-tv1" id="NsW-t5-LXP"/>
+                                            <outlet property="constraintViewLongBreakWidth" destination="qJ6-ju-WAi" id="wS3-v8-HU4"/>
+                                            <outlet property="constraintViewShortBreakWidth" destination="W4D-hc-6uL" id="sF7-Gx-K5R"/>
+                                            <outlet property="lblFocus" destination="xQJ-5x-AtY" id="jf9-JJ-nCh"/>
+                                            <outlet property="lblLongBreak" destination="rT8-ix-gWU" id="dQF-GH-jjr"/>
+                                            <outlet property="lblPomodoros" destination="pcH-Hc-Afe" id="sVU-cY-1U8"/>
+                                            <outlet property="lblShortBreak" destination="fNC-oA-Ffi" id="Nbb-MW-8JN"/>
+                                            <outlet property="lblTitle" destination="gDL-dq-g5f" id="dM1-av-ayb"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="rJ7-uC-zsx" id="tZl-Tl-RqZ"/>
+                                    <outlet property="delegate" destination="rJ7-uC-zsx" id="tWW-Hv-slN"/>
+                                </connections>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Pd-9M-YmW">
+                                <rect key="frame" x="25" y="25" width="30" height="30"/>
+                                <state key="normal" image="icoBack"/>
+                                <connections>
+                                    <action selector="backButtonTapped:" destination="rJ7-uC-zsx" eventType="touchUpInside" id="Om3-iw-khE"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="8As-XC-Kgl"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="9Pd-9M-YmW" firstAttribute="leading" secondItem="8As-XC-Kgl" secondAttribute="leading" constant="25" id="2Ao-dG-Re8"/>
+                            <constraint firstItem="8As-XC-Kgl" firstAttribute="trailing" secondItem="SJ6-oR-V1j" secondAttribute="trailing" id="3hF-Y4-6ew"/>
+                            <constraint firstItem="9Pd-9M-YmW" firstAttribute="top" secondItem="Xi0-9U-cmB" secondAttribute="top" constant="25" id="Eq1-Pw-cAm"/>
+                            <constraint firstAttribute="bottom" secondItem="SJ6-oR-V1j" secondAttribute="bottom" id="Uwd-Y8-6Wa"/>
+                            <constraint firstItem="SJ6-oR-V1j" firstAttribute="top" secondItem="Xi0-9U-cmB" secondAttribute="top" id="XLi-em-dP8"/>
+                            <constraint firstItem="SJ6-oR-V1j" firstAttribute="leading" secondItem="8As-XC-Kgl" secondAttribute="leading" id="rMe-9n-a6S"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="savedConfigurationsTableView" destination="SJ6-oR-V1j" id="hzZ-dD-3kb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DFH-Ij-Kqa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-184.05797101449278" y="164.73214285714286"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="icoBack" width="30" height="30"/>
+        <image name="icoPomo" width="51" height="47"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

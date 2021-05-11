@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="QuattrocentoSans-Bold.ttf">
+            <string>QuattrocentoSans-Bold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Timer View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="TimerViewController" customModule="doro" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icoLogo" translatesAutoresizingMaskIntoConstraints="NO" id="xjL-RV-DhV">
+                                <rect key="frame" x="54.5" y="10" width="211" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="pQd-8x-ajq"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FRb-gN-CiI">
+                                <rect key="frame" x="30" y="508" width="260" height="40"/>
+                                <color key="backgroundColor" red="0.16862745098039217" green="0.61960784313725492" blue="0.49019607843137253" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="0Sc-zT-BvU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="QuattrocentoSans-Bold" family="Quattrocento Sans" pointSize="18"/>
+                                <state key="normal" title="Start">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="startStopTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0pO-3u-qjo"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rqs-VZ-Vhl">
+                                <rect key="frame" x="30" y="134" width="260" height="260"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="llB-sa-qAl">
+                                        <rect key="frame" x="60" y="80.5" width="140" height="99"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="focus for">
+                                                <attributes>
+                                                    <color key="NSColor" red="0.23921568627450979" green="0.23921568627450979" blue="0.23921568627450979" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" size="25" name="QuattrocentoSans"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content=" --:--">
+                                                <attributes>
+                                                    <color key="NSColor" red="0.23921568627450979" green="0.23921568627450979" blue="0.23921568627450979" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" size="64" name="QuattrocentoSans"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Rqs-VZ-Vhl" secondAttribute="height" id="Zen-l7-6Dh"/>
+                                    <constraint firstItem="llB-sa-qAl" firstAttribute="centerX" secondItem="Rqs-VZ-Vhl" secondAttribute="centerX" id="sqz-aS-CV4"/>
+                                    <constraint firstItem="llB-sa-qAl" firstAttribute="centerY" secondItem="Rqs-VZ-Vhl" secondAttribute="centerY" id="uRJ-dv-AEC"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a1z-6B-To8">
+                                <rect key="frame" x="30" y="404" width="100" height="94"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="exd-uw-BNm"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="pomodoros ">
+                                        <attributes>
+                                            <color key="NSColor" red="0.23921568627450979" green="0.23921568627450979" blue="0.23921568627450979" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="17" name="QuattrocentoSans"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="-/-">
+                                        <attributes>
+                                            <color key="NSColor" red="0.23921568627450979" green="0.23921568627450979" blue="0.23921568627450979" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="25" name="QuattrocentoSans"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JsU-M2-UpF">
+                                <rect key="frame" x="230" y="404" width="60" height="94"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="60" id="rvR-Jn-ZDJ"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="total --">
+                                        <attributes>
+                                            <color key="NSColor" red="0.23921568627450979" green="0.23921568627450979" blue="0.23921568627450979" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="17" name="QuattrocentoSans"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=":">
+                                        <attributes>
+                                            <color key="NSColor" red="0.23921568627450979" green="0.23921568627450979" blue="0.23921568627450979" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="20" name="QuattrocentoSans"/>
+                                            <font key="NSOriginalFont" size="17" name="QuattrocentoSans"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="--">
+                                        <attributes>
+                                            <color key="NSColor" red="0.23921568627450979" green="0.23921568627450979" blue="0.23921568627450979" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="17" name="QuattrocentoSans"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="xjL-RV-DhV" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="6dM-t4-M23"/>
+                            <constraint firstItem="JsU-M2-UpF" firstAttribute="leading" relation="lessThanOrEqual" secondItem="a1z-6B-To8" secondAttribute="trailing" constant="100" id="8Es-oM-tYJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Rqs-VZ-Vhl" secondAttribute="trailing" constant="30" id="94M-fh-Jqy"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="FRb-gN-CiI" secondAttribute="bottom" constant="20" id="FEe-e3-zoR"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="JsU-M2-UpF" secondAttribute="trailing" constant="30" id="Hjt-il-TKW"/>
+                            <constraint firstItem="FRb-gN-CiI" firstAttribute="top" secondItem="JsU-M2-UpF" secondAttribute="bottom" constant="10" id="MWI-wj-WtW"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="FRb-gN-CiI" secondAttribute="trailing" constant="30" id="O1t-AP-NzC"/>
+                            <constraint firstItem="a1z-6B-To8" firstAttribute="top" secondItem="Rqs-VZ-Vhl" secondAttribute="bottom" constant="10" id="Taw-y1-Dwt"/>
+                            <constraint firstItem="a1z-6B-To8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="VD3-yl-56C"/>
+                            <constraint firstItem="Rqs-VZ-Vhl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="VTY-CL-Yqg"/>
+                            <constraint firstItem="FRb-gN-CiI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="Y76-ym-dTL"/>
+                            <constraint firstItem="Rqs-VZ-Vhl" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-20" id="ihR-Xc-u4f"/>
+                            <constraint firstItem="JsU-M2-UpF" firstAttribute="top" secondItem="Rqs-VZ-Vhl" secondAttribute="bottom" constant="10" id="omA-5D-BaL"/>
+                            <constraint firstItem="xjL-RV-DhV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pLd-ql-BlN"/>
+                            <constraint firstItem="FRb-gN-CiI" firstAttribute="top" secondItem="a1z-6B-To8" secondAttribute="bottom" constant="10" id="uPX-CT-3Cq"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="btnStartStop" destination="FRb-gN-CiI" id="Te1-AR-cXH"/>
+                        <outlet property="lblFocusRest" destination="llB-sa-qAl" id="EnD-Mc-Cje"/>
+                        <outlet property="lblPomodoros" destination="a1z-6B-To8" id="P5W-RF-5yB"/>
+                        <outlet property="lblTotal" destination="JsU-M2-UpF" id="2J4-QJ-ld7"/>
+                        <outlet property="viewProgressContainer" destination="Rqs-VZ-Vhl" id="fOT-ib-THe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-355" y="126"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="icoLogo" width="211" height="82"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
