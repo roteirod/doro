@@ -54,11 +54,11 @@ class ParametersViewController: UIViewController {
     }
     
     @IBAction func sliderValueChanged(_ sender: UISlider) {
-        lblValues[sender.tag].text = sender.tag == 3 ? "\(Int(sliders[sender.tag].value))" : "\(Int(sliders[sender.tag].value)):00"
+        lblValues[sender.tag].text = sender.tag == 3 ? "\(Int(sliders[sender.tag].value.rounded()))" : "\(Int(sliders[sender.tag].value.rounded())):00"
     }
     
     @IBAction func confirmTapped(_ sender: Any) {
-        delegate?.startSession(pomodoros: Int(sliders[3].value), focus: Double(sliders[0].value * 60), shortBreak: Double(sliders[1].value * 60), longBreak: Double(sliders[2].value * 60))
+        delegate?.startSession(pomodoros: Int(sliders[3].value.rounded()), focus: Double(sliders[0].value.rounded() * 60), shortBreak: Double(sliders[1].value.rounded() * 60), longBreak: Double(sliders[2].value.rounded() * 60))
         dismiss(animated: true, completion: nil)
     }
     
@@ -140,7 +140,7 @@ class ParametersViewController: UIViewController {
             if configTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" {
                 self.presentMessagePopup(title: "Error", body: "Please enter a configuration name")
             } else {
-                DataManager.shared.saveConfiguration(title: configTextField.text!, pomodoros: Int(self.sliders[3].value), focus: Double(self.sliders[0].value * 60), shortBreak: Double(self.sliders[1].value * 60), longBreak: Double(self.sliders[2].value * 60))
+                DataManager.shared.saveConfiguration(title: configTextField.text!, pomodoros: Int(self.sliders[3].value.rounded()), focus: Double(self.sliders[0].value.rounded() * 60), shortBreak: Double(self.sliders[1].value.rounded() * 60), longBreak: Double(self.sliders[2].value.rounded() * 60))
                 
                 self.presentMessagePopup(title: "Success", body: "The configuration has been saved!")
             }
