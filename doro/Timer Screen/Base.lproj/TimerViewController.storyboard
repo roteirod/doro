@@ -132,7 +132,6 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="xjL-RV-DhV" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="6dM-t4-M23"/>
-                            <constraint firstItem="JsU-M2-UpF" firstAttribute="leading" relation="lessThanOrEqual" secondItem="a1z-6B-To8" secondAttribute="trailing" constant="100" id="8Es-oM-tYJ"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Rqs-VZ-Vhl" secondAttribute="trailing" constant="30" id="94M-fh-Jqy"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="FRb-gN-CiI" secondAttribute="bottom" constant="20" id="FEe-e3-zoR"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="JsU-M2-UpF" secondAttribute="trailing" constant="30" id="Hjt-il-TKW"/>
